@@ -11,7 +11,7 @@
     <div id="app">
       {{ number }}
       <button v-on:click="countUp"><カウントアップ</button>
-      <div v-text="number"></div>
+      <div v-if="number">条件次第で表示</div>
     </div>
     <script>
         new Vue({
